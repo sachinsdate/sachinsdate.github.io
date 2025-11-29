@@ -1,0 +1,398 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f8f2e7; /* cream */
+  font-family: Georgia, "Times New Roman", serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+.pub-media img,
+.media-thumb img,
+.writing-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #e0d4c5;
+  background: #fdf9f1;
+}
+
+/* Page container */
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #fdf7ec; /* slightly lighter cream */
+  min-height: 100vh;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+
+.site-header {
+  background: #7b1e26; /* deep burgundy */
+  color: #fff;
+  padding: 2.5rem 1.5rem 2rem;
+  border-bottom: 4px solid #4f1016;
+}
+
+.header-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.name {
+  margin: 0;
+  font-size: 2.4rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.tagline {
+  margin: 0.5rem 0;
+  font-size: 1.05rem;
+}
+
+.contact {
+  margin: 0.5rem 0 1rem;
+  font-size: 0.95rem;
+}
+
+.contact a {
+  color: #ffe9d7;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.research-summary {
+  margin: 0 auto;
+  max-width: 680px;
+  font-size: 0.98rem;
+}
+
+/* Sections */
+
+.section {
+  padding: 2rem 1.5rem;
+  border-top: 1px solid #e0d4c5;
+}
+
+.section-title {
+  margin: 0 0 1.5rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #4c2b24;
+  border-bottom: 2px solid #d0bca3;
+  padding-bottom: 0.4rem;
+}
+
+/* Education */
+
+.edu-entry + .edu-entry {
+  margin-top: 1.5rem;
+}
+
+.edu-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.degree {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.edu-meta {
+  font-size: 0.96rem;
+  font-style: italic;
+}
+
+.edu-concentration {
+  margin: 0.3rem 0 0;
+  font-size: 0.95rem;
+}
+
+/* Publications */
+
+.pub-entry {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.8rem;
+  align-items: stretch;
+}
+
+.pub-media {
+  flex: 0 0 180px;
+}
+
+.pub-content {
+  flex: 1 1 260px;
+}
+
+.pub-title {
+  margin: 0 0 0.3rem;
+  font-size: 1.1rem;
+}
+
+.pub-meta {
+  margin: 0 0 0.6rem;
+  font-size: 0.92rem;
+  color: #5a4a40;
+}
+
+.pub-meta a {
+  color: #7b1e26;
+  text-decoration: none;
+}
+
+.pub-meta a:hover {
+  text-decoration: underline;
+}
+
+.pub-desc {
+  margin: 0;
+  font-size: 0.96rem;
+}
+
+/* Media / writing placeholders */
+
+.media-placeholder {
+  border: 1px dashed #c4b29e;
+  background: #f4ead8;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #7a674f;
+}
+
+/* Media section */
+
+.media-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.media-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.media-thumb {
+  flex: 0 0 200px;
+}
+
+.media-info {
+  flex: 1 1 260px;
+}
+
+.media-title {
+  margin: 0 0 0.3rem;
+  font-size: 1.05rem;
+}
+
+.media-desc {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+}
+
+.media-links a {
+  font-size: 0.95rem;
+  color: #7b1e26;
+  text-decoration: none;
+}
+
+.media-links a:hover {
+  text-decoration: underline;
+}
+
+/* Broader impact writing */
+
+.writing-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.writing-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.writing-image {
+  flex: 0 0 160px;
+}
+
+.writing-info {
+  flex: 1 1 260px;
+}
+
+.writing-title {
+  margin: 0 0 0.3rem;
+  font-size: 1.05rem;
+}
+
+.writing-desc {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+}
+
+.writing-links a {
+  font-size: 0.95rem;
+  color: #7b1e26;
+  text-decoration: none;
+}
+
+.writing-links a:hover {
+  text-decoration: underline;
+}
+
+/* Experience */
+
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.exp-item {
+  padding: 1rem 1rem 0.8rem;
+  border: 1px solid #e0d4c5;
+  background: #fdf9f1;
+}
+
+.exp-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.exp-role {
+  margin: 0;
+  font-size: 1.02rem;
+}
+
+.exp-company {
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.exp-meta {
+  margin-top: 0.2rem;
+  font-size: 0.92rem;
+  color: #5a4a40;
+}
+
+.exp-desc {
+  margin: 0.7rem 0 0.3rem;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+
+.site-footer {
+  padding: 1rem 1.5rem 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #7a674f;
+  border-top: 1px solid #e0d4c5;
+}
+
+/*  Make responsive */
+
+/* Tablets / small laptops */
+/* Tablets / small laptops */
+@media (max-width: 768px) {
+  .page {
+    max-width: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .site-header {
+    padding: 2rem 1.25rem 1.75rem;
+  }
+
+  .section {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .site-footer {
+    padding: 1rem 1.25rem 1.5rem;
+  }
+
+  /* Turn card rows into stacked blocks */
+  .pub-entry,
+  .media-item,
+  .writing-item {
+    display: block;          /* instead of flex on small screens */
+  }
+
+  .pub-media,
+  .media-thumb,
+  .writing-image {
+    width: 100%;
+    max-width: 420px;        /* keep images from being absurdly wide */
+    margin: 0 auto 1rem;     /* center the image and add spacing below */
+  }
+
+  .pub-content,
+  .media-info,
+  .writing-info {
+    width: 100%;
+  }
+}
+
+
+/* Small phones */
+@media (max-width: 480px) {
+  .name {
+    font-size: 1.9rem;
+    letter-spacing: 0.06em;
+  }
+
+  .tagline {
+    font-size: 0.98rem;
+  }
+
+  .contact {
+    font-size: 0.9rem;
+  }
+
+  .research-summary {
+    font-size: 0.94rem;
+  }
+
+  .section-title {
+    font-size: 1.15rem;
+    letter-spacing: 0.08em;
+  }
+
+  .degree,
+  .pub-title,
+  .media-title,
+  .writing-title,
+  .exp-role {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 0.97rem;
+  }
+}

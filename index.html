@@ -1,45 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Sachin's Home Page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #f5f5f5;
-    }
-    .card {
-      background: white;
-      padding: 2rem 3rem;
-      border-radius: 10px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-      text-align: center;
-    }
-    h1 {
-      margin-top: 0;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      margin: 0;
-      color: #555;
-    }
-    code {
-      background: #f0f0f0;
-      padding: 0.1rem 0.4rem;
-      border-radius: 4px;
-    }
-  </style>
-</head>
-<body>
-  <div class="card">
-    <h1>Home page</h1>
-    <p>This page is being served from <code>index.html</code> in my GitHub Pages site.</p>
-  </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sachin Date – Research Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="page">
+
+            <header class="site-header">
+                <div class="header-inner">
+                    <h1 class="name">Sachin Date</h1>
+                    <p class="tagline">Author · Researcher · Engineer</p>
+                    <p class="contact">
+                    <a href="https://linkedIn.com/in/sachindate">LinkedIn</a> ·
+                    <a href="https://github.com/sachinsdate">GitHub</a> ·
+                    <a href="https://medium.com/@timeseriesreasoning">Medium</a> ·
+                    <a href="https://orcid.org/0009-0008-4448-5827">ORCID</a>
+                    </p>
+                    <p class="research-summary">
+                    My research interests lie in statistical modeling and social network analysis.
+                    </p>
+                </div>
+            </header>
+
+            <main>
+
+                <!-- Education -->
+                <section id="education" class="section">
+                    <h2 class="section-title">Education</h2>
+
+                    <div class="edu-entry">
+                        <div class="edu-main">
+                            <h3 class="degree">Master of Science in Computer Science</h3>
+                            <div class="edu-meta">
+                                <span class="institution">University of Massachusetts Amherst</span>
+                            </div>
+                        </div>
+                        <p class="edu-concentration">
+                            Concentration: Artificial Intelligence, Intelligent Tutoring Systems, Distributed Operating Systems, Real-Time Middleware for Media Streaming
+                        </p>
+                    </div>
+
+                    <div class="edu-entry">
+                        <div class="edu-main">
+                            <h3 class="degree">Bachelor of Electrical Engineering</h3>
+                            <div class="edu-meta">
+                                <span class="institution">University of Mumbai</span>
+                            </div>
+                        </div>
+                        <p class="edu-concentration">
+                            Concentration: Microprocessor Architectures
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Selected Published Research -->
+                <section id="publications" class="section">
+                    <h2 class="section-title">Selected Published Research</h2>
+
+                    <article class="pub-entry">
+                        <div class="pub-media">
+                            <img src="images/coffee.png" alt="Coffee">
+                        </div>
+                        <div class="pub-content">
+                            <p class="pub-meta">
+                                Date, S., <a href="https://doi.org/10.1109/DSAA65442.2025.11247972"><b>An Event Study Framework for Analyzing Bidirectional Causality Between House Prices and Premium Café Entry</b></a>, In: <em>Proceedings of the 2025 IEEE 12th International Conference on Data Science and Advanced Analytics (DSAA)</em>, Birmingham, United Kingdom, October 9-12, 2025, pp. 1-10, DOI: <a href="https://doi.org/10.1109/DSAA65442.2025.11247972">10.1109/DSAA65442.2025.11247972</a>
+                            </p>
+                            <p class="pub-desc">
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="pub-entry">
+                        <div class="pub-media">
+                            <img src="images/George_Carlin.jpg" alt="George Carlin performing one of his last shows in 2008 (CC BY-SA 2.0) Source: https://commons.wikimedia.org/wiki/File:Jesus_is_coming.._Look_Busy_(George_Carlin).jpg">
+                        </div>
+                        <div class="pub-content">
+                            <p class="pub-meta">
+                                Date, S., <a href="https://doi.org/10.1007/978-3-031-78554-2_1"><b>A Social Network Based Approach to Analyzing Artistic Influences on American Stand-Up Comedians</b></a>, In: <em>Proceedings of the 16th International Conference on Social Networks Analysis and Mining (ASONAM 2024)</em>, Rende, Italy, September 2–5, 2024, DOI: <a href="https://doi.org/10.1007/978-3-031-78554-2_1">10.1007/978-3-031-78554-2_1</a>
+                            </p>
+                            <p class="pub-desc">
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="pub-entry">
+                        <div class="pub-media">
+                            <img src="images/960px-Gilbert_WShakespeares_Plays.jpg" alt="The Plays of William Shakespeare (Public domain) Source: https://commons.wikimedia.org/wiki/File:Gilbert_WShakespeares_Plays.jpg">
+                        </div>
+                        <div class="pub-content">
+                            <p class="pub-meta">
+                                Date, S., <a href="https://doi.org/10.1093/jrssig/qmae059"><b>Did Shakespeare influence Seinfeld?</b></a>, <em>Significance</em>, Volume 21, Issue 4, September 2024, pp 23–29, DOI: <a href="https://doi.org/10.1093/jrssig/qmae059">10.1093/jrssig/qmae059</a>
+                            </p>
+                            <p class="pub-desc">
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="pub-entry">
+                        <div class="pub-media">
+                            <img src="images/Change_In_Breakeven_Data_Transfer_Size_With_Upload_Rate.png" alt="Change In Breakeven Data Transfer Size With Upload Rate">
+                        </div>
+                        <div class="pub-content">
+                            <p class="pub-meta">
+                                Date, S., <a href="https://doi.org/10.1145/2909493"><b>Should you upload or ship big data to the cloud?</b></a>, <em>Communications of the ACM</em>, Volume 59, Number 7, July 2016, pp 44–51, DOI: <a href="https://doi.org/10.1145/2909493">10.1145/2909493</a>
+                            </p>
+                            <p class="pub-desc">
+                                <em>Selected articles from the ACM Queue (see below) are also published in Communications.</em>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="pub-entry">
+                        <div class="pub-media">
+                            <img src="images/Truck_Carrying_Harddrives.png" alt="Truck Carrying Hard Drives">
+                        </div>
+                        <div class="pub-content">
+                            <p class="pub-meta">
+                                Date, S., <a href="https://doi.org/10.1145/2927299.2933408"><b>Should you upload or ship big data to the cloud?</b></a>, <em>ACM Queue</em>, Research Article, Volume 14, Issue 2, May 2016, DOI: <a href="https://doi.org/10.1145/2927299.2933408">10.1145/2927299.2933408</a>
+                            </p>
+                            <p class="pub-desc">
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="pub-entry">
+                        <div class="pub-media">
+                            <img src="images/Pope_Field_Air_Traffic_Control_Tower_(9206250542).jpg" alt="Source: https://commons.wikimedia.org/wiki/File:Pope_Field_Air_Traffic_Control_Tower_(9206250542).jpg">
+                        </div>
+                        <div class="pub-content">
+                            <p class="pub-meta">
+                                Deutsch, S.; Pew, R. W., Tenney, Y. J., Diller, D. E., Godfrey, K., Spector, S., Benyo, B., Date, S., Gluck, K. A., <a href="https://www.researchgate.net/publication/235024719_Agent-Based_Modeling_and_Behavior_Representation_AMBR"><b>Agent-based modeling and behavior representation (AMBR)</b></a>, Technical Report AFRL-HE-WPTR-2004-0191, BBN Labs, Cambridge, MA, 2004
+                            </p>
+                            <p class="pub-desc">
+                            </p>
+                        </div>
+                    </article>
+                </section>
+
+                <section id="in-review" class="section">
+                    <h2 class="section-title">In Review</h2>
+
+                    <article class="pub-entry">
+                        <div class="pub-media">
+                            <img src="images/The_School_of_Athens__by_Raffaello_Sanzio_da_Urbino.jpg" alt="Source: The School of Athens (CC0). Source: https://en.wikipedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg">
+                        </div>
+                        <div class="pub-content">
+                            <p class="pub-meta">
+                                Date, S., <b>Diffusion Characteristics of Social Networks of Artistic Influence</b>
+                            <p class="pub-desc">
+                                <b>Invited book chapter</b> under review for the upcoming 3rd edition of the <a href="https://link.springer.com/referencework/10.1007/978-1-4939-7131-2"><em>Encyclopedia of Social Network Analysis and Mining</em></a>, eds. R. Alhajj and J. Rokne, Springer.
+                            </p>
+                        </div>
+                    </article>
+
+                </section>
+
+                <!-- Media (Talks, Videos, PPTs, etc.) -->
+                <section id="media" class="section">
+                    <h2 class="section-title">Media</h2>
+                    <div class="media-list">
+                        <article class="media-item">
+                            <div class="media-thumb">
+                                <img src="images/Stats_Plus_Stories.png" alt="Stats + Stories">
+                            </div>
+                            <div class="media-info">
+                                <h3 class="media-title">
+                                    The Statistical Kings of Comedy (Stats + Stories, Episode 348)
+                                </h3>
+                                <p class="media-desc">
+                                On the <em>Stats + Stories</em> podcast, I talk with hosts John Bailer and Rosemary Pennington about how statistical modeling and social network analysis can be used to understand patterns of artistic influence among contemporary American stand-up comedians.
+                                </p>
+                                <p class="media-links">
+                                <a href="https://statsandstories.net/entertainment1/the-statistical-kings-of-comedy"
+                                    target="_blank" rel="noopener">
+                                    <b>Listen on Stats + Stories</b>
+                                </a>
+                                </p>
+                            </div>
+                        </article>
+                        <article class="media-item">
+                            <div class="media-thumb">
+                                <img src="images/Influences_On_American_Standup_Comedians.png" alt="Influences On American Standup Comedians">
+                            </div>
+                            <div class="media-info">
+                                <h3 class="media-title">
+                                    Conference Presentation: A Social Network Based Approach to Analyzing Artistic Influences on American Stand-Up Comedians
+                                </h3>
+                                <p class="media-desc">
+                                    Conference talk based on my research using social network analysis and statistical modeling to study patterns of artistic influence among contemporary American stand-up comedians.
+                                </p>
+                                <p class="media-links">
+                                    <a href="https://www.youtube.com/watch?v=pkHldqtH1z8"
+                                        target="_blank" rel="noopener">
+                                        <b>Watch on YouTube</b>
+                                    </a>
+                                </p>
+                            </div>
+                        </article>
+                        <article class="media-item">
+                            <div class="media-thumb">
+                                <img src="images/Truck_Carrying_Harddrives.png" alt="Should You Upload Or Ship Your Big Data To The Cloud?">
+                            </div>
+                            <div class="media-info">
+                                <h3 class="media-title">
+                                Should You Upload Or Ship Your Big Data To The Cloud?
+                                </h3>
+                                <p class="media-desc">
+                                    Companion talk to my 2016 ACM article examining the trade-offs between uploading and physically shipping terabyte-scale data to the cloud. The talk presents an analytical comparison of the two strategies, highlighting how factors such as network bandwidth and drive interface speeds affect which approach is more practical in real-world scenarios.
+                                </p>
+                                <p class="media-links">
+                                <a href="https://youtu.be/o69iOECEqKQ"
+                                    target="_blank" rel="noopener">
+                                    <b>Watch on YouTube</b>
+                                </a>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Broader Impact Writing -->
+                <section id="writing" class="section">
+                    <h2 class="section-title">Selected Stories In Statistics</h2>
+
+                    <div class="writing-list">
+                        <article class="writing-item">
+                            <div class="writing-image">
+                                <img src="images/Cheese_platter.jpg" alt="A cheese platter">
+                            </div>
+                            <div class="writing-info">
+                                <h3 class="writing-title"><em>“If you try it, you might wanna buy it.”</em> - An Introduction to Statistical Sampling</h3>
+                                <p class="writing-desc">
+                                    Statistical sampling is the art of selecting a sample that embodies the essence of the population you wish to study. A good sample, therefore, is a miniature version of the population.
+                                </p>
+                                <p class="writing-links">
+                                    <a href="https://medium.com/data-science/statistical-sampling-c1e45a43ceb4" target="_blank" rel="noopener"><b>Read article</b></a>
+                                </p>
+                            </div>
+                        </article>
+                        <article class="writing-item">
+                            <div class="writing-image">
+                                <img src="images/bias.png" alt="Bias">
+                            </div>
+                            <div class="writing-info">
+                                <h3 class="writing-title"><em>How Biased is Your Regression Model?</em> - A deep dive into the causes, effects, and remedies for bias in regression models</h3>
+                                <p class="writing-desc">
+                                    Your estimate is biased if it consistently deviates from the true value, usually in a systematic pattern, and this deviation is more pronounced for certain classes of data compared to others.
+                                </p>
+                                <p class="writing-links">
+                                    <a href="https://medium.com/data-science/how-biased-is-your-regression-model-4ef6c1495b77" target="_blank" rel="noopener"><b>Read article</b></a>
+                                </p>
+                            </div>
+                        </article>
+                        <article class="writing-item">
+                            <div class="writing-image">
+                                <img src="images/Worlds_Highest_Living_Standards.jpg" alt="Worlds Highest Living Standards">
+                            </div>
+                            <div class="writing-info">
+                                <h3 class="writing-title"><em>Nonresponse Bias</em> - How the Silent Majority Decided an Election, and Sunk a Beloved Publisher</h3>
+                                <p class="writing-desc">
+                                    An intro to a statistical bias that makes its brutal presence felt through a complete absence of data.
+                                </p>
+                                <p class="writing-links">
+                                    <a href="https://medium.com/data-science/nonresponse-bias-how-the-silent-majority-decided-an-election-and-sunk-a-beloved-publisher-90a40e73d3a1" target="_blank" rel="noopener"><b>Read article</b></a>
+                                </p>
+                            </div>
+                        </article>
+                        <article class="writing-item">
+                            <div class="writing-image">
+                                <img src="images/Louis_Meijer_French_paddle_steamer_at_sea.jpg" alt="Louis Meijer French paddle steamer at sea (CC0). Source: https://commons.wikimedia.org/wiki/File:Louis_Meijer_French_paddle_steamer_at_sea.jpg">
+                            </div>
+                            <div class="writing-info">
+                                <h3 class="writing-title"><em>Statistical Convergence and its Consequences</em></h3>
+                                <p class="writing-desc">
+                                    A story about convergence of random variables set within the extraordinary voyage of the Nimrod.
+                                </p>
+                                <p class="writing-links">
+                                    <a href="https://medium.com/data-science/statistical-convergence-and-its-consequences-1134a0b4d936" target="_blank" rel="noopener"><b>Read article</b></a>
+                                </p>
+                            </div>
+                        </article>
+                        <article class="writing-item">
+                            <div class="writing-image">
+                                <img src="images/mars_bar.jpg" alt="Mars bar">
+                            </div>
+                            <div class="writing-info">
+                                <h3 class="writing-title"><em>A Proof of the Central Limit Theorem</em> - If you like chocolate, this proof will feel like the multi-layered magic of a Mars bar</h3>
+                                <p class="writing-desc">
+                                    There are, in essence, two ways to prove the Central Limit Theorem. The first one is empirical while the second one employs the quietly perfect precision of mathematical thought. I’ll cover both methods in this article.
+                                </p>
+                                <p class="writing-links">
+                                    <a href="https://medium.com/data-science/a-proof-of-the-central-limit-theorem-8be40324da83" target="_blank" rel="noopener"><b>Read article</b></a>
+                                </p>
+                            </div>
+                        </article>
+                        <article class="writing-item">
+                            <div class="writing-image">
+                                <img src="images/william-shakespeare-67768_1280.jpg" alt="Hamlet">
+                            </div>
+                            <div class="writing-info">
+                                <h3 class="writing-title"><em>Unraveling the Law of Large Numbers</em></h3>
+                                <p class="writing-desc">
+                                    The LLN is interesting as much for what it does not say as for what it does.
+                                </p>
+                                <p class="writing-links">
+                                    <a href="https://medium.com/data-science/unraveling-the-law-of-large-numbers-e36a3219acb2" target="_blank" rel="noopener"><b>Read article</b></a>
+                                </p>
+                            </div>
+                        </article>
+                        <article class="writing-item">
+                            <div class="writing-image">
+                                <img src="images/Ars_Conjectandi.jpg" alt="Ars Conjectandi">
+                                </div>
+                            <div class="writing-info">
+                                <h3 class="writing-title"><em>On Jacob Bernoulli, the Law of Large Numbers, and the Origins of the Central Limit Theorem</em></h3>
+                                <p class="writing-desc">
+                                    An exploration of the Weak Law of Large Numbers and the Central Limit Theorem through the long lens of history.
+                                </p>
+                                <p class="writing-links">
+                                    <a href="https://medium.com/data-science/on-jacob-bernoulli-the-law-of-large-numbers-and-the-origins-of-the-central-limit-theorem-8101bc6104e1" target="_blank" rel="noopener"><b>Read article</b></a>
+                                </p>
+                            </div>
+                        </article>
+                        <article class="writing-item">
+                            <div class="writing-image">
+                                <img src="images/Abraham_De_Moivre.jpg" alt="Abraham De Moivre">
+                            </div>
+                            <div class="writing-info">
+                                <h3 class="writing-title"><em>Abraham De Moivre, His Famous Theorem, and the Birth of the Normal Curve</em></h3>
+                                <p class="writing-desc">
+                                    The life and times of Abraham De Moivre, his famous theorem, and how it set the stage for the discovery of the Central Limit Theorem.
+                                </p>
+                                <p class="writing-links">
+                                    <a href="https://medium.com/data-science/abraham-de-moivre-his-famous-theorem-and-the-birth-of-the-normal-curve-ee11ab5f9f20" target="_blank" rel="noopener"><b>Read article</b></a>
+                                </p>
+                            </div>
+                        </article>
+                        <article class="writing-item">
+                            <div class="writing-image">
+                                <img src="images/Pierre_Simon_de_Laplace.jpg" alt="Pierre Simon de Laplace">
+                            </div>
+                            <div class="writing-info">
+                                <h3 class="writing-title"><em>Pierre-Simon Laplace, Inverse Probability, and the Central Limit Theorem</em></h3>
+                                <p class="writing-desc">
+                                    On Laplace’s brilliant solution to inverse probability and his discovery of the Central Limit Theorem.
+                                </p>
+                                <p class="writing-links">
+                                    <a href="https://medium.com/data-science/pierre-simon-laplace-inverse-probability-and-the-central-limit-theorem-d52bec2e0dba" target="_blank" rel="noopener"><b>Read article</b></a>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Experience -->
+                <section id="experience" class="section">
+                    <h2 class="section-title">Experience</h2>
+
+                    <div class="exp-list">
+                        <article class="exp-item">
+                            <div class="exp-header">
+                                <h3 class="exp-role">Vice President - Product Innovation</h3>
+                                <span class="exp-company">VitalEdge Technologies</span>
+                            </div>
+                            <div class="exp-meta">2014 – Present</div>
+                            <p class="exp-desc">
+                                I use principles from AI/ML/Data Science to create software products for the heavy equipment industry.
+                            </p>
+                        </article>
+
+                        <article class="exp-item">
+                            <div class="exp-header">
+                                <h3 class="exp-role">Practice Head – Mobile Technologies</h3>
+                                <span class="exp-company">Quinnox Consultancy Services</span>
+                            </div>
+                            <div class="exp-meta">2007 – 2014</div>
+                            <p class="exp-desc">
+                                Co-founded and led the mobile applications practice of Company.
+                            </p>
+                        </article>
+
+                        <article class="exp-item">
+                            <div class="exp-header">
+                                <h3 class="exp-role">Scientist – Systems Analyst</h3>
+                                <span class="exp-company">BBN Technologies</span>
+                            </div>
+                            <div class="exp-meta">1999 – 2007</div>
+                            <p class="exp-desc">
+                                Designed and built several large-scale distributed real-time and near-real-time multi-agent systems and simulations.
+                            </p>
+                        </article>
+
+                        <article class="exp-item">
+                            <div class="exp-header">
+                                <h3 class="exp-role">Graduate Research Assistant</h3>
+                                <span class="exp-company">University of Massachusetts Amherst</span>
+                            </div>
+                            <div class="exp-meta">1998 – 1999</div>
+                            <p class="exp-desc">
+                                Built intelligent tutoring systems for UMass’s undergraduate Chemistry majors.
+                            </p>
+                        </article>
+
+                        <article class="exp-item">
+                            <div class="exp-header">
+                                <h3 class="exp-role">Graduate Teaching Assistant</h3>
+                                <span class="exp-company">University of Massachusetts Amherst</span>
+                            </div>
+                            <div class="exp-meta">1997 – 1998</div>
+                            <p class="exp-desc">
+                                Teaching assistant for UMass’s undergraduate computer science courses.
+                            </p>
+                        </article>
+
+                        <article class="exp-item">
+                            <div class="exp-header">
+                                <h3 class="exp-role">Systems Trainee</h3>
+                                <span class="exp-company">I2 Technologies</span>
+                            </div>
+                            <div class="exp-meta">1996 – 1997</div>
+                            <p class="exp-desc">
+                                Developed, maintained, tested supply chain software.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+            </main>
+
+            <footer class="site-footer">
+                <p>© Sachin Date</p>
+            </footer>
+
+        </div>
+    </body>
 </html>

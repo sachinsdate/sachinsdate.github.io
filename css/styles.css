@@ -6,7 +6,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: #f8f2e7; /* cream */
+  /* cream */
+  background: #f8f2e7;
   font-family: Georgia, "Times New Roman", serif;
   color: #222;
   line-height: 1.6;
@@ -27,7 +28,8 @@ body {
 .page {
   max-width: 960px;
   margin: 0 auto;
-  background: #fdf7ec; /* slightly lighter cream */
+ /* slightly lighter cream */
+  background: #fdf7ec;
   min-height: 100vh;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
@@ -35,7 +37,8 @@ body {
 /* Header */
 
 .site-header {
-  background: #7b1e26; /* deep burgundy */
+  /* deep burgundy */
+  background: #7b1e26;
   color: #fff;
   padding: 2.5rem 1.5rem 2rem;
   border-bottom: 4px solid #4f1016;
@@ -126,12 +129,31 @@ body {
 
 /* Publications */
 
+/* Each publication as a clearly separated card */
 .pub-entry {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 1.8rem;
   align-items: stretch;
+
+  /* card + separator */
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  /* horizontal separator */
+  border-bottom: 2px solid #d0bca3;
+
+  /* slightly lighter than the page */
+  background: #fdf9f1;
+  /* side padding as well */
+  padding: 1rem 1rem 1.5rem;
+  border-radius: 4px;
+}
+
+/* No separator after the last publication */
+.pub-entry:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .pub-media {
@@ -232,6 +254,30 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+/* Card-style separation for publications, media and writing items */
+.pub-entry,
+.media-item,
+.writing-item {
+  /* space inside each card */
+  padding: 1rem 1rem 1.5rem;
+  /* space between cards */
+  margin-bottom: 1.5rem;
+  /* horizontal separator */
+  border-bottom: 2px solid #d0bca3;
+  /* subtle card background */
+  background: #fdf9f1;
+  border-radius: 4px;
+}
+
+/* No separator after the last item in each list */
+.pub-entry:last-of-type,
+.media-item:last-of-type,
+.writing-item:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .writing-image {
@@ -341,15 +387,18 @@ body {
   .pub-entry,
   .media-item,
   .writing-item {
-    display: block;          /* instead of flex on small screens */
+    /* instead of flex on small screens */
+    display: block;
   }
 
   .pub-media,
   .media-thumb,
   .writing-image {
     width: 100%;
-    max-width: 420px;        /* keep images from being absurdly wide */
-    margin: 0 auto 1rem;     /* center the image and add spacing below */
+    /* keep images from being absurdly wide */
+    max-width: 420px;
+    /* center the image and add spacing below */
+    margin: 0 auto 1rem;
   }
 
   .pub-content,
@@ -359,6 +408,12 @@ body {
   }
 }
 
+.section-intro {
+  font-style: italic;
+  color: #5a4a42;
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+}
 
 /* Small phones */
 @media (max-width: 480px) {
